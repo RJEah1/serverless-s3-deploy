@@ -97,7 +97,8 @@ class Assets {
               Body: body,
               Bucket: bucket,
               Key: path.join(prefix, filename),
-              ContentType: type
+              ContentType: type,
+              ServerSideEncryption: 'AES256'
             }, opt.headers || {});
 
             this.provider.request('S3', 'putObject', details);
