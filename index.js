@@ -181,7 +181,7 @@ class Assets {
                     Bucket: bucket,
                     Key: key,
                     ContentType: type,
-					ServerSideEncryption: 'AES256'
+                    ServerSideEncryption: 'AES256'
                   },
                   opt.headers || {}
                 );
